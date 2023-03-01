@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+    android:id="@+id/layout"
+    android:background="@drawable/goodgame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundGravity="bottom">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/score"
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCORE-" android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/time"
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIME-"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/hs"
+            android:background="@android:color/holo_green_light"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGHSCORE-"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"/>
+    </LinearLayout>
+    <Button android:textSize="45sp"
+        android:id="@+id/again"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRY AGAIN"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
